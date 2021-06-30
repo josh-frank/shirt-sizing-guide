@@ -1,13 +1,3 @@
-/*
-circumference of the NECK
-circumference/girth across the CHEST slightly above the nipples
-ARMSCYE depth (distance from shoulder to underarm)
-natural WAIST LENGTH (from neck to waist)
-BACK width (from one armpit to another)
-SLEEVE LENGTH (from armpit to wrist)
-SHIRT LENGTH (from nape of neck to shirt hem slightly above groin)
-*/
-
 import { useState } from "react";
 
 export default function FormFields( { setActiveField } ) {

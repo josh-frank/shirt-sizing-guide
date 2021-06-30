@@ -1,3 +1,13 @@
+/*
+circumference of the NECK
+circumference/girth across the CHEST slightly above the nipples
+ARMSCYE depth (distance from shoulder to underarm)
+natural WAIST LENGTH (from neck to waist)
+BACK width (from one armpit to another)
+SLEEVE LENGTH (from armpit to wrist)
+SHIRT LENGTH (from nape of neck to shirt hem slightly above groin)
+*/
+
 const ShirtOutline = () => <path fill="#F1F2F2" d="M39.193,41.09c0,0-0.271,0.047-0.501,0.316c0,0-0.847,0.998-1.587,1.801
     c-0.743,0.803-0.858,1.424-1.722,1.862c-0.865,0.439-0.689-0.017-1.433,0.753c-0.742,0.771-1.898,1.07-3.196,1.794
     c-1.3,0.724-6.492,2.107-7.782,2.437c-1.288,0.33-4.541,1.695-5.976,2.581c-1.435,0.884-1.505,1.08-2.337,1.485
@@ -122,11 +132,22 @@ const Body = () => <path fill="#939598" d="M81.73,153.14c1.233-4.402,0.797-10.89
     c0.527,1.228,0.504,0.834,0.918,1.369C60.593,202.42,59.692,203.021,59.211,203.568z"
 />
 
+// const activeMeasurementInstructions = {
+//     neck: "Measure the circumference of the neck - measuring tape should rest relaxed and slack around the collarbone",
+//     chest: "Measure the widest point across the chest slightly above the nipples",
+//     armscye: "Measure the depth of the armscye - generous distance from shoulder to underarm/armpit",
+//     waist: "Measure the natural waist length - generous distance from neck to natural waist, resting on the flesh above the hips",
+//     back: "Measure the width across the back from one armpit to another",
+//     sleeve: "Measure the sleeve length - the distance from the armpit to just past the wrist",
+//     hem: "Measure the natural hemline - the distance from the nape of the neck to slightly above the groin",
+// };
+
 const activeMeasurementLines = {
     neck: <path fill="none" stroke="#000000" strokeWidth="1.0661" strokeMiterlimit="10" strokeDasharray="2,1" d="M37.439,44.601 c0,0,4,3,11.625,2.875s11.645-4.838,11.645-4.838"/>,
     chest: <path fill="none" stroke="#000000" strokeWidth="1.0661" strokeMiterlimit="10" strokeDasharray="2,1" d="M22.987,76.078 c0,0,28.46,3.359,54.391-0.769"/>,
     armscye: <path fill="none" stroke="#000000" strokeWidth="1.0661" strokeMiterlimit="10" strokeDasharray="2,1" d="M21.896,49.64 c0,0,3.667,8.333,3.667,21.333s-1.529,19.369-2.765,22.435"/>,
-    waist: <path fill="none" stroke="#000000" strokeWidth="1.0661" strokeMiterlimit="10" strokeDasharray="2,1" d="M22.73,105.807 c0,0,15.666,2.333,27.667,2.333s19.667,0.333,28.333-2.333"/>,
+    waist: <path fill="none" stroke="#000000" strokeWidth="1.0661" strokeMiterlimit="10" strokeDasharray="2,1" d="M 65.133 44.57 c 0 0 2.867 11.43 3.867 24.43 s 0 11 0 29"/>,
+    // waist: <path fill="none" stroke="#000000" strokeWidth="1.0661" strokeMiterlimit="10" strokeDasharray="2,1" d="M22.73,105.807 c0,0,15.666,2.333,27.667,2.333s19.667,0.333,28.333-2.333"/>,
     back: <path fill="none" stroke="#000000" strokeWidth="1.1981" strokeMiterlimit="10" strokeDasharray="2.2477,1.1239" d="M20.121,83.856c0,0,31.986-3.775,61.128,0.864"/>,
     sleeve: <path fill="none" stroke="#000000" strokeWidth="1.0661" strokeMiterlimit="10" strokeDasharray="2,1" d="M16.313,53.724 c0,0-4.25,29-5.75,50s-3.25,38.5-3.25,38.5"/>,
     hem: <path fill="none" stroke="#000000" strokeWidth="1.0661" strokeMiterlimit="10" strokeDasharray="2,1" d="M65.133,44.57 c0,0,4.93,17.154,3.68,41.154s2,53,2,53"/>
@@ -134,7 +155,7 @@ const activeMeasurementLines = {
 
 export default function Silhouette( { activeField } ) {
 
-    return <svg className="silhouette" width="100" height="285" viewBox="0 0 100 285">
+    return <svg className="silhouette" viewBox="0 0 100 285">
         <ShirtOutline />
         <Hands />
         <Head />
