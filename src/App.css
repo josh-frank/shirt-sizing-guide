@@ -1,0 +1,13 @@
+.app {
+    display: grid;
+}
+
+.size-form {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.silhouette {
+    grid-row: 1;
+    grid-column: 2;
+}
